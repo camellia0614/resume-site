@@ -1,0 +1,17 @@
+{{/* Minimal Publications section that tolerates missing fields */}}
+{{ $items := index .Data "publications" "items" }}
+{{ if and $items (gt (len $items) 0) }}
+<section id="publications">
+  <h2>Publications</h2>
+  <ul>
+  {{ range $items }}
+    <li>
+      {{- with .title -}}<strong>{{ . }}</strong>{{- end -}}
+      {{- with .venue -}} — {{ . }}{{- end -}}
+      {{- with .year -}} ({{ . }}){{- end -}}
+      {{- with .link -}} — <a href="{{ . }}" target="_blank" rel="noopener">link</a>{{- end -}}
+    </li>
+  {{ end }}
+  </ul>
+</section>
+{{ end }}

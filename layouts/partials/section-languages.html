@@ -1,0 +1,9 @@
+{{ $lang := index .Data "features" "languages" }}
+<section id="languages">
+  {{ if $lang }}
+  <h2>Languages</h2>
+  <ul>
+    {{ range $lang }}<li><strong>{{ .name }}</strong> - {{ .level }}</li>{{ end }}
+  </ul>
+  {{ end }}
+</section>

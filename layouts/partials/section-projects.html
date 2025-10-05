@@ -1,0 +1,21 @@
+{{/* Minimal Projects section that matches data/projects.yaml */}}
+{{ $items := index .Data "projects" "items" }}
+{{ if $items }}
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+  {{ range $items }}
+    <li>
+      <strong>{{ .name }}</strong>{{ with .org }} — {{ . }}{{ end }}{{ with .period }} ({{ . }}){{ end }}
+      {{ with .bullets }}
+      <ul>
+        {{ range . }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </li>
+  {{ end }}
+  </ul>
+</section>
+{{ end }}

@@ -1,0 +1,17 @@
+{{ $lang := index .Data "features" "languages" }}
+{{ $skills := index .Data "features" "skills" }}
+<section id="features">
+  {{ if $lang }}
+  <h2>Languages</h2>
+  <ul>
+    {{ range $lang }}<li><strong>{{ .name }}</strong> - {{ .level }}</li>{{ end }}
+  </ul>
+  {{ end }}
+  {{ if $skills }}
+  <h2>Skills</h2>
+  {{ range $skills }}
+    {{ $title := or .group .title .name }}
+    <p><strong>{{ $title }}</strong>{{ with .items }}: {{ range $i, $v := . }}{{ if $i }}, {{ end }}{{ with $v.name }}{{ . }}{{ else }}{{ $v }}{{ end }}{{ end }}{{ end }}</p>
+  {{ end }}
+  {{ end }}
+</section>

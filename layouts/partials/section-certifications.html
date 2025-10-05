@@ -1,0 +1,17 @@
+{{/* Minimal Certifications section; expects data/certifications.yaml with items[].name/org/year/link (optional) */}}
+{{ $items := index .Data "certifications" "items" }}
+{{ if and $items (gt (len $items) 0) }}
+<section id="certifications">
+  <h2>Certifications</h2>
+  <ul>
+  {{ range $items }}
+    <li>
+      {{ with .name }}<strong>{{ . }}</strong>{{ end }}
+      {{ with .org }} — {{ . }}{{ end }}
+      {{ with .year }} ({{ . }}){{ end }}
+      {{ with .link }} — <a href="{{ . }}" target="_blank" rel="noopener">link</a>{{ end }}
+    </li>
+  {{ end }}
+  </ul>
+</section>
+{{ end }}

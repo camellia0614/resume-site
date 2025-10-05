@@ -1,0 +1,7 @@
+{{ $about := index .Data "about" "text" }}
+{{ if $about }}
+<section id="about">
+  <h2>About Me</h2>
+  <p style="max-width:56rem;line-height:1.5">{{ $about }}</p>
+</section>
+{{ end }}

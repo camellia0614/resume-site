@@ -1,0 +1,16 @@
+items:
+  - name: Generative AI for Financial Analysis
+    org: University of Arizona – Tucson, AZ
+    period: Jan 2025 – Jun 2025
+    bullets:
+      - Built a pipeline to process 10K+ rows of performance data from multiple sources using Python and SQL.
+      - Created Tableau/Power BI dashboards for stakeholders to track risks, sentiments, and behavioral patterns.
+      - Documented transformation rules and versioned reporting templates for reproducibility and audit alignment.
+
+  - name: Machine Learning for Music Analytics
+    org: Course Project
+    period: 2024
+    bullets:
+      - Analyzed Spotify top-streamed tracks (953 songs, 24 features) with EDA, feature engineering, and clustering.
+      - Explored relationships between audio features (tempo, energy, danceability) and streaming performance.
+      - Built baseline models and visual summaries to communicate insights.

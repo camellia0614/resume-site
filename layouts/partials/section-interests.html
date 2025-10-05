@@ -1,0 +1,9 @@
+{{ $items := index .Data "interests" "items" }}
+{{ if and $items (gt (len $items) 0) }}
+<section id="interests">
+  <h2>Interests</h2>
+  <ul>
+    {{ range $items }}<li>{{ . }}</li>{{ end }}
+  </ul>
+</section>
+{{ end }}

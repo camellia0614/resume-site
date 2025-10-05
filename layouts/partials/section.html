@@ -1,0 +1,4 @@
+{{ $feat := .Feature }}
+{{ $key := cond (isset $feat "feature") $feat.feature $feat }}
+{{ $name := printf "section-%s.html" $key }}
+{{ partial $name . }}

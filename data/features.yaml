@@ -1,0 +1,25 @@
+languages:
+  - name: Chinese
+    level: Native
+  - name: English
+    level: Professional
+  - name: French
+    level: Intermediate
+
+skills:
+  - group: Data Tools
+    items:
+      - Python (pandas, matplotlib)
+      - SQL
+      - Tableau
+      - Power BI
+      - Excel (pivots, VLOOKUP)
+      - ArcGIS (familiar), EnergyCAP (exposure)
+
+  - group: Data Techniques
+    items:
+      - ETL Pipelines
+      - Predictive Modeling
+      - Time Series Analysis
+      - Dashboard Design
+      - QA/QC Procedures

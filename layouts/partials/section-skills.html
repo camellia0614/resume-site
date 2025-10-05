@@ -1,0 +1,10 @@
+{{ $skills := index .Data "features" "skills" }}
+<section id="skills">
+  {{ if $skills }}
+  <h2>Skills</h2>
+  {{ range $skills }}
+    {{ $title := or .group .title .name }}
+    <p><strong>{{ $title }}</strong>{{ with .items }}: {{ delimit . ", " }}{{ end }}</p>
+  {{ end }}
+  {{ end }}
+</section>

@@ -1,0 +1,16 @@
+baseURL: "http://localhost/"
+languageCode: "en-us"
+title: "Resume | Jiayu Cheng"
+theme: "resume-a4"
+params:
+  avatar:
+    enabled: false
+    url: "avatar.jpg"
+  contact: false
+  sections:
+    - feature: profile
+    - feature: about
+    - feature: features
+    - feature: education
+    - feature: experience
+    - feature: projects

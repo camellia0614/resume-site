@@ -1,0 +1,17 @@
+{{ $p := index .Data "profile" }}
+<section id="profile">
+  <div style="display:flex;align-items:center;gap:16px">
+    {{ with .Params.avatar }}{{ if .enabled }}
+      <img src="{{ .url | relURL }}" alt="avatar" style="width:96px;height:96px;border-radius:50%;object-fit:cover">
+    {{ end }}{{ end }}
+    <div>
+      <h1 style="margin:0">{{ $p.name }}</h1>
+      {{ with $p.title }}<div><strong>{{ . }}</strong></div>{{ end }}
+      <div style="font-size:0.95em;color:#666">
+        {{ with $p.email }}<span>{{ . }}</span>{{ end }}
+        {{ with $p.phone }}<span> · {{ . }}</span>{{ end }}
+        {{ with $p.location }}<span> · {{ . }}</span>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+{{/* Minimal Experience section that matches data/experience.yaml */}}
+{{ $items := index .Data "experience" "items" }}
+{{ if $items }}
+<section id="experience">
+  <h2>Experience</h2>
+  {{ range $items }}
+    <div class="exp-item" style="margin-bottom:0.75rem">
+      <div>
+        <strong>{{ .company }}</strong>{{ with .role }} — {{ . }}{{ end }}
+        {{ with .period }}<span style="float:right">{{ . }}</span>{{ end }}
+      </div>
+      {{ with .location }}<div><em>{{ . }}</em></div>{{ end }}
+      {{ with .bullets }}
+      <ul>
+        {{ range . }}<li>{{ . }}</li>{{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  {{ end }}
+</section>
+{{ end }}

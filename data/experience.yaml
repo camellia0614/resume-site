@@ -1,0 +1,38 @@
+items:
+  - company: Business Analytics Projects (University of Arizona)
+    role: Research Assistant
+    location: Tucson, AZ
+    period: Sep 2024 – Dec 2024
+    bullets:
+      - Designed ETL workflows to standardize multi-source research datasets.
+      - Built predictive and descriptive models on energy/sustainability variables in Python.
+      - Extracted and cleaned campus/external datasets; prepared A/B testing inputs.
+      - Produced compliance-ready report templates and summaries.
+
+  - company: Fosun Company (China)
+    role: General Ledger Tax Intern
+    location: Shanghai, China
+    period: Jun 2022 – Oct 2022
+    bullets:
+      - Reconciled environmental and utility expenditure accounts across 20+ business units.
+      - Built Excel dashboards for carbon-related cost components; supported audits.
+      - Improved data integrity with QA/QC checks and documented metadata for month-end closes.
+
+  - company: Schaeffler Greater China Company (China)
+    role: Channel Management Intern
+    location: Shanghai, China
+    period: Oct 2023 – Jun 2024
+    bullets:
+      - Collected, transformed, and analyzed product/contract data for 5+ key projects.
+      - Standardized data and monitoring across 100+ contracts, improving efficiency by ~15%.
+      - Documented workflows, ensured completeness, and prepared stakeholder summaries.
+      - Contributed to environmental reporting by standardizing KPI metrics and visuals.
+
+  - company: Shanghai Normal University
+    role: Teaching Assistant
+    location: Shanghai, China
+    period: Sep 2020 – Jun 2024
+    bullets:
+      - Managed assignment tracking, grade reconciliation, and consistency checks.
+      - Prepared and presented materials for large cohorts; communicated complex topics clearly.
+      - Coordinated documentation and QC for standardized grading/reporting procedures.
